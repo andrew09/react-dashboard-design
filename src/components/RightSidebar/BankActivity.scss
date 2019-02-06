@@ -1,0 +1,73 @@
+@import '../../colors.scss';
+
+.BankActivity {
+  border-bottom: 1px solid $lightGreyText;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > h3 {
+      color: $darkGreyText;
+    }
+
+    > span {
+      font-size: 14px;
+      font-weight: 700;
+      color: $green;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 20px 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+
+      .positive {
+        color: $green;
+      }
+      .negative {
+        color: $red;
+      }
+
+      .difference {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $extraLightGreyText;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+      }
+
+      .details {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding-left: 15px;
+
+        p {
+          margin: 0;
+          font-size: 14px;
+          font-weight: 700;
+          color: $darkGreyText;
+
+          &:last-child {
+            font-weight: 100;
+          }
+        }
+      }
+
+      > span {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+  }
+}

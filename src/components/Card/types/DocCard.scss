@@ -1,0 +1,76 @@
+@import '../../../colors.scss';
+@import '../../../mixins.scss';
+
+.DocCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px;
+
+  &.microsoftWord, &.pdf {
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      color: $white;
+      width: 45px;
+      height: 45px;
+      border-radius: 5px 0 0 0;
+    }
+  }
+
+  &.microsoftWord {
+    border-bottom: 5px solid $blue;
+    @include cardColorBoxShadow(rgba(99, 160, 230, 0.7));
+
+    .logo {
+      background-color: $blue;
+      top: 662px;
+      left: 425px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+
+  &.pdf {
+    border-bottom: 5px solid $red;
+    @include cardColorBoxShadow(rgba(219, 106, 122, 0.7));
+
+    .logo {
+      background-color: $red;
+      top: 1002px;
+      left: 817px;
+      font-weight: 300;
+      font-size: 14px;
+    }
+  }
+
+  > h3 {
+    margin: 0;
+    color: $darkGreyText;
+  }
+
+  > p {
+    margin: 0;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    color: $lightGreyText;
+  }
+
+  .time {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: $lightGreyText;
+
+    svg {
+      padding-right: 10px;
+    }
+  }
+}

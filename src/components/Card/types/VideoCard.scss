@@ -1,0 +1,65 @@
+@import '../../../colors.scss';
+@import '../../../mixins.scss';
+
+.VideoCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px;
+  @include boxRadius();
+  @include boxShadow();
+  background: url('../../../assets/video-card-background.png');
+
+  .length {
+    display: block;
+    padding: 8px;
+    left: 110px;
+    position: relative;
+    top: -30px;
+    border-radius: 8px;
+    color: $white;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .playButton {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+
+    > svg {
+      color: $darkGreyText;
+      fill: $darkGreyText;
+    }
+  }
+
+  .data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    h3 {
+      color: $white;
+      margin: 10px 0;
+    }
+
+    .time {
+      display: flex;
+      align-self: flex-start;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 600;
+      color: $white;
+
+      svg {
+        padding-right: 10px;
+      }
+    }
+  }
+}

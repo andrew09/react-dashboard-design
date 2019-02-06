@@ -1,0 +1,42 @@
+@import '../../colors.scss';
+
+.AutoPay {
+  > h3 {
+    color: $darkGreyText;
+  }
+
+  > p {
+    color: $lightGreyText;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .switch {
+    display: flex;
+    align-items: center;
+
+    .background {
+      display: block;
+      background-color: $green;
+      width: 55px;
+      height: 25px;
+      border-radius: 20px;
+    }
+
+    .slider {
+      position: relative;
+      right: 23px;
+      background-color: $white;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+
+    > p {
+      color: $green;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+}

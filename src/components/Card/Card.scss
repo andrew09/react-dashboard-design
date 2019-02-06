@@ -1,0 +1,12 @@
+@import '../../colors.scss';
+@import '../../mixins.scss';
+
+.Card {
+  display: flex;
+  width: 320px;
+  height: 280px;
+  background-color: $white;
+  margin-bottom: 60px;
+  @include boxRadius();
+  @include boxShadow();
+}

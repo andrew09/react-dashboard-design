@@ -1,0 +1,11 @@
+@import './colors.scss';
+
+html {
+  background-color: $backgroundGrey;
+  -webkit-font-smoothing: antialiased;
+
+  .App {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,14 @@
+@import '../../colors.scss';
+@import '../../mixins.scss';
+
+.RightSidebar {
+  position: absolute;
+  width: 270px;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  padding: 40px;
+  background-color: $white;
+  overflow: hidden;
+  @include boxShadow();
+}
